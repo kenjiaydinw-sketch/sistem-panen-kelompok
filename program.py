@@ -4,19 +4,19 @@ def input_data():
 
 def buat_laporan(data):
     if not data:
-        print("Belum ada data hasil panen.")
+        print("Belum ada data panen untuk dilaporkan.")
         return
 
     total = sum(data)
     rata_rata = total / len(data)
-    hasil_tertinggi = max(data)
-    hasil_terendah = min(data)
+    tertinggi = max(data)
+    terendah = min(data)
 
-    print("\nLaporan hasil panen")
-    print(f"Total hasil panen: {total:.2f} kg")
-    print(f"Rata-rata per lahan: {rata_rata:.2f} kg")
-    print(f"Hasil panen tertinggi: {hasil_tertinggi:.2f} kg")
-    print(f"Hasil panen terendah: {hasil_terendah:.2f} kg")
+    print("=== LAPORAN HASIL PANEN ===")
+    print(f"Total hasil panen   : {total} kg")
+    print(f"Rata-rata per lahan : {rata_rata:.2f} kg")
+    print(f"Hasil tertinggi     : {tertinggi} kg")
+    print(f"Hasil terendah      : {terendah} kg")
 
 if __name__ == "__main__":
     data = input_data()
