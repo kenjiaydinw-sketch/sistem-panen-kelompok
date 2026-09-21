@@ -12,7 +12,7 @@ def buat_laporan(data):
     tertinggi = max(data)
     terendah = min(data)
 
-    print("=== LAPORAN HASIL PANEN ===")
+    print("===== LAPORAN PANEN KELOMPOK =====")
     print(f"Total hasil panen   : {total} kg")
     print(f"Rata-rata per lahan : {rata_rata:.2f} kg")
     print(f"Hasil tertinggi     : {tertinggi} kg")
